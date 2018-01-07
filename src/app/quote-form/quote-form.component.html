@@ -1,13 +1,18 @@
-<form>
+<div class="row">
+  <div class="col-md-4">
+    <hr>
+    <form #quoteForm='ngForm'>
 
-<div class="form-group">
-  <label for="name">Name</label>
-    <input type="text" class="form-control" id="name" required>
+      <div class="form-group">
+        <label for="name">Username</label>
+        <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" required>
+     Display {{newQuote.userName}}
+      </div>
 
-<div class="form-group">
-  <label for="description">Description</label>
-    <textarea class="form-control" id="description" rows="8" required></textarea>
-  
+      <div class="form-group">
+        <label for="description">Input quote</label>
+        <textarea class="form-control" id="description" rows="8" [(ngModel)]="newQuote.description" name="name" required></textarea>
+      </div>
+    </form>
+  </div>
 </div>
-
-</form>
