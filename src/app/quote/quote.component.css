@@ -1,3 +1,14 @@
 .quote-box {
-    
+    border: solid;
+    border-color: darkorange;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    padding-left: 2%;
+    background-color: rgba(30, 144, 255, 0.3```)
+
+}
+
+hr {
+ border-color: hotpink;   
 }
