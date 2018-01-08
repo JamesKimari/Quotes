@@ -1,27 +1,28 @@
-# Quotes
+Goals
+Developer: James Kimari
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
+Project Name: Goals
 
-## Development server
+Description
+This is an angular app for creating new quotes, upvoting them, downvoting them and deleting them.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Specifications
+This app creates a new quote
+It upvotes and downvotes quotes
+It allows the user to delete a quote
+Setup/Installation Requirements
+Internet connection
+Link to deployed page: Quotes
+Known Bugs
+Any user acn delete any quote even if it is not their own.
 
-## Code scaffolding
+Technologies used
+-Angular
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Support and contact details
+Mobile number: (254) 714307232
+Email Address: jamesgkimari@gmail.com
+License and terms of use
+MIT License this application's source code is free for any open source projects
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+© JamesKimari | Credits Moringa School
