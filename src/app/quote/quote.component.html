@@ -1,1 +1,21 @@
-<app-quote-form></app-quote-form>
+<div class="row">
+  <div class="col-md-4">
+    <app-quote-form></app-quote-form>
+  </div>
+
+  <div class="col-md-6 offset-md-1">
+      <hr>
+    <div *ngFor='let quote of quotes'>
+      <div class="quote-box">
+        <p>{{quote.quoteContent}} <span style="color: dodgerblue; font-weight: bold;">
+            ~ {{quote.authorName}} </span></p>
+            <p><span style="font-size: 1.2em; color: hotpink;">
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i></span> {{quote.upVote}}
+                &ensp; <span style="color: dodgerblue; font-size: 1.2em;">
+                    <i class="fa fa-thumbs-down" aria-hidden="true"></i></span>
+                    {{quote.downVote}} </p>
+            <hr>
+      </div>
+    </div>
+  </div>
+</div>
