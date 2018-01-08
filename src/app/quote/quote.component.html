@@ -5,21 +5,14 @@
 
   <div class="col-md-6 offset-md-1">
     <hr>
-    <div *ngFor='let quote of quotes'>
-      <div class="quote-box">
+    <div *ngFor='let quote of quotes; let i = index'>
+      <div class="quote-box" id="{{i}}">
         <p>{{quote.quoteContent}}
           <span style="color: dodgerblue; font-weight: bold;">
-            ~ {{quote.authorName}} </span>
-        </p>
-        <p>
-          <span style="font-size: 1.2em; color: hotpink;">
-            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-          </span> {{quote.upVote}} &ensp;
-          <span style="color: dodgerblue; font-size: 1.2em;">
-            <i class="fa fa-thumbs-down" aria-hidden="true"></i>
-          </span>
-          {{quote.downVote}} &ensp;
-        <button (click)='deleteQuote(true)'>Delete</button></p>
+            ~ {{quote.authorName}} </span>&ensp; <Span style="color: darkgrey; font-size: 0.8em; ">{{quote.creationTime|date}}</Span></p>
+        <app-user-vote></app-user-vote>
+       
+        
         <hr>
       </div>
     </div>

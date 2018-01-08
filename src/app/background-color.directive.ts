@@ -5,6 +5,8 @@ import { Directive, ElementRef } from '@angular/core';
 })
 export class BackgroundColorDirective {
 
-  constructor(private elem:ElementRef) { }
+  constructor(private elem: ElementRef) {
+    this.elem.nativeElement.style.backgroundColor = 'dodgerblue';
+   }
 
 }
