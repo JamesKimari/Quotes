@@ -10,7 +10,7 @@ export class TimeCountPipe implements PipeTransform {
     const todayWithNoTime: any = new Date(today.getFullYear(), today.getMonth(), today.getDate());
     const seconds = Math.abs((value - todayWithNoTime) / 1000);
 
-    const interval = Math.abs(Math.round(seconds / 31536000));
+    let interval = Math.abs(Math.round(seconds / 31536000));
 
     if (interval >= 1) {
       return interval + ' years';
