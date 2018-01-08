@@ -8,6 +8,7 @@ import { QuoteComponent } from './quote/quote.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { BackgroundColorDirective } from './background-color.directive';
 import { UserVoteComponent } from './user-vote/user-vote.component';
+import { TimeCountPipe } from './time-count.pipe';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { UserVoteComponent } from './user-vote/user-vote.component';
     QuoteComponent,
     QuoteFormComponent,
     BackgroundColorDirective,
-    UserVoteComponent
+    UserVoteComponent,
+    TimeCountPipe
   ],
   imports: [
     BrowserModule,
