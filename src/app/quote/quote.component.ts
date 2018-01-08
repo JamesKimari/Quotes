@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import {Quote} from '../quote';
 
 @Component({
@@ -13,6 +13,10 @@ export class QuoteComponent implements OnInit {
     new Quote(2, 'Walt Whitman', 'Keep your face always toward the sunshine - and shadows will fall behind you.', 200, 3),
     new Quote(3, 'Albert Einstein', "You can't blame gravity for falling in love.", 502, 1)
   ];
+
+  @Output() deleteThisQuote = new EventEmitter<boolean>();
+
+
 
   constructor() { }
 
