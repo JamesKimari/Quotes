@@ -1,7 +1,9 @@
 hr {
-    border-color: hotpink;
+  border-color: hotpink;
 }
 
 .form-control {
-    border-color: dodgerblue;
+  border-color: dodgerblue;
+  background-color: rgba(30, 144, 255, 0.3);
 }
+
