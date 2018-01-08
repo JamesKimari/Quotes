@@ -33,3 +33,4 @@ export class TimeCountPipe implements PipeTransform {
     }
     return Math.floor(seconds) + ' seconds';
   }
+}
