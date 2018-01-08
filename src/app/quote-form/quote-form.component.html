@@ -16,10 +16,21 @@
     <label for="quoteContent">
       <span style="color: darkorange">Input quote</span>
     </label>
-    <textarea class="form-control" id="quoteContent" rows="6" [(ngModel)]="newQuote.quoteContent" name="name" #quoteContent="ngModel"
+    <textarea class="form-control" id="quoteContent" rows="6" [(ngModel)]="newQuote.quoteContent" name="quoteContent" #quoteContent="ngModel"
       required></textarea>
     <div [hidden]="quoteContent.valid || quoteContent.pristine" class="alert alert-danger">
       <p>Quote is required</p>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="creationTime">
+      <span style="color: darkorange">Date</span>
+    </label>
+    <input type="Date" class="form-control" id="creationTime" [(ngModel)]="newQuote.creationTime" name="creationTime" #creationTime="ngModel"
+      required>
+    <div [hidden]="creationTime.valid || creationTime.pristine" class="alert alert-danger">
+      <p>Input the Date</p>
     </div>
   </div>
 
